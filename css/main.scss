@@ -332,7 +332,7 @@ header {
 
                 .images {
                     display: grid;
-                    grid-template-columns: 140px 140px;
+                    grid-template-columns: repeat(2, 140px);
                     justify-content: center;
                     grid-gap: 10px;
 
@@ -508,6 +508,18 @@ header {
     }
 }
 
+@media only screen and (min-width: 425px) {
+    .wuu-ecosystem .container .display-mobile .project-1 {
+        .images {
+            grid-template-columns: repeat(2, 180px);
+
+            img {
+                width: 180px;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 428px) {
 
     .showcase .container .title-header, .wuu-ecosystem .container .title-header, .founder .container .title-header {
@@ -585,7 +597,7 @@ header {
 
     .wuu-ecosystem .container .display-mobile .project-1 {
         .images {
-            grid-template-columns: 180px 180px;
+            grid-template-columns: repeat(2, 180px);
 
             img {
                 width: 180px;

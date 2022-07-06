@@ -347,8 +347,8 @@ header .navigation-row .menu-toggle .hamburger path {
 .wuu-ecosystem .container .display-mobile .project-1 .images {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 140px 140px;
-      grid-template-columns: 140px 140px;
+  -ms-grid-columns: (140px)[2];
+      grid-template-columns: repeat(2, 140px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -491,6 +491,16 @@ header .navigation-row .menu-toggle .hamburger path {
   }
 }
 
+@media only screen and (min-width: 425px) {
+  .wuu-ecosystem .container .display-mobile .project-1 .images {
+    -ms-grid-columns: (180px)[2];
+        grid-template-columns: repeat(2, 180px);
+  }
+  .wuu-ecosystem .container .display-mobile .project-1 .images img {
+    width: 180px;
+  }
+}
+
 @media only screen and (min-width: 428px) {
   .showcase .container .title-header .title, .wuu-ecosystem .container .title-header .title, .founder .container .title-header .title {
     font-size: 44px;
@@ -532,8 +542,8 @@ header .navigation-row .menu-toggle .hamburger path {
     left: 428px;
   }
   .wuu-ecosystem .container .display-mobile .project-1 .images {
-    -ms-grid-columns: 180px 180px;
-        grid-template-columns: 180px 180px;
+    -ms-grid-columns: (180px)[2];
+        grid-template-columns: repeat(2, 180px);
   }
   .wuu-ecosystem .container .display-mobile .project-1 .images img {
     width: 180px;
