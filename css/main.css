@@ -114,6 +114,7 @@ header .navigation-row .menu-toggle .hamburger path {
 .fullpage-menu nav {
   position: relative;
   z-index: 10;
+  margin-top: -5em;
 }
 
 .fullpage-menu nav ul {
@@ -501,8 +502,11 @@ header .navigation-row .menu-toggle .hamburger path {
     font-size: 50px;
   }
   .fullpage-menu .header-nav-footer {
-    bottom: 6em;
+    bottom: 10em;
     padding: 4.5em 2.5em;
+  }
+  .fullpage-menu .header-nav-footer .social-links li {
+    font-size: 18px;
   }
   .founder .container .title-header .title {
     margin: 0 1.1em;
