@@ -670,7 +670,17 @@ header .navigation-row .menu-toggle .hamburger path {
     font-size: 60px;
   }
   header .navigation-row {
-    padding: 2em 2.5em 0;
+    padding: 2em 4em 0;
+  }
+  .fullpage-menu nav {
+    padding: 2em;
+  }
+  .fullpage-menu nav ul li a {
+    font-size: 80px;
+  }
+  .fullpage-menu .header-nav-footer .social-links li {
+    padding: 0 2em;
+    margin-right: 0em;
   }
   .hero-section .container {
     padding: 0 2.5em;
