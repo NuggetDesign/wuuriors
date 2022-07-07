@@ -687,9 +687,8 @@ header .navigation-row .menu-toggle .hamburger path {
     display: none;
   }
   .showcase .container .wrapper-larger {
-    -webkit-overflow-scrolling: auto;
     height: 400px;
-    display: unset;
+    display: block;
   }
   .showcase .container .wrapper-larger .boxes-larger {
     left: -100%;
