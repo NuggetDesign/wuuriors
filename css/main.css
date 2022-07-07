@@ -842,6 +842,7 @@ header .navigation-row .menu-toggle .hamburger path {
     padding: 0 6em;
   }
   .hero-section .container .display-desktop .title {
+    margin-top: 10em;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 500px 500px;
