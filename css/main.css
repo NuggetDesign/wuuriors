@@ -238,7 +238,7 @@ header .navigation-row .menu-toggle .hamburger path {
 }
 
 .showcase .container .wrapper {
-  width: 320px;
+  width: 100%;
   height: 140px;
   position: relative;
   margin: auto;
@@ -261,18 +261,18 @@ header .navigation-row .menu-toggle .hamburger path {
 }
 
 .showcase .container .wrapper-mobile {
-  width: 320px;
+  width: 100%;
   height: 140px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 5px;
   overflow: hidden;
 }
 
 .showcase .container .wrapper-mobile .boxes-mobile {
   position: relative;
-  left: 320px;
+  left: 100%;
 }
 
 .showcase .container .wrapper-mobile .box-mobile {
@@ -304,7 +304,7 @@ header .navigation-row .menu-toggle .hamburger path {
   color: #BDBDBD;
 }
 
-.wuu-ecosystem .container .display-mobile .project-1 .information {
+.wuu-ecosystem .container .project-1 .left .information {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,38 +313,38 @@ header .navigation-row .menu-toggle .hamburger path {
           justify-content: center;
 }
 
-.wuu-ecosystem .container .display-mobile .project-1 .information .information-number {
+.wuu-ecosystem .container .project-1 .left .information .information-number {
   text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
   color: black;
   font-size: 75px;
 }
 
-.wuu-ecosystem .container .display-mobile .project-1 .information .project-date {
+.wuu-ecosystem .container .project-1 .left .information .project-date {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-left: 1em;
 }
 
-.wuu-ecosystem .container .display-mobile .project-1 .information .project-date .date {
+.wuu-ecosystem .container .project-1 .left .information .project-date .date {
   font-size: 14px;
 }
 
-.wuu-ecosystem .container .display-mobile .project-1 .information .project-date .date span {
+.wuu-ecosystem .container .project-1 .left .information .project-date .date span {
   color: #BDBDBD;
 }
 
-.wuu-ecosystem .container .display-mobile .project-1 .information .project-date .project-title {
+.wuu-ecosystem .container .project-1 .left .information .project-date .project-title {
   font-size: 30px;
   margin-bottom: 10px;
 }
 
-.wuu-ecosystem .container .display-mobile .project-1 .project-information {
+.wuu-ecosystem .container .project-1 .left .project-information {
   padding: .5em 1em;
   color: #C3C3C3;
   line-height: 27px;
 }
 
-.wuu-ecosystem .container .display-mobile .project-1 .images {
+.wuu-ecosystem .container .project-1 .images {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (140px)[2];
@@ -355,7 +355,7 @@ header .navigation-row .menu-toggle .hamburger path {
   grid-gap: 10px;
 }
 
-.wuu-ecosystem .container .display-mobile .project-1 .images img {
+.wuu-ecosystem .container .project-1 .images img {
   width: 140px;
 }
 
@@ -378,15 +378,15 @@ header .navigation-row .menu-toggle .hamburger path {
   color: #BDBDBD;
 }
 
-.founder .container .display-mobile {
+.founder .container .words {
   padding: 1em;
 }
 
-.founder .container .display-mobile img {
+.founder .container .words img {
   width: 100%;
 }
 
-.founder .container .display-mobile .role {
+.founder .container .words .right .role {
   text-transform: uppercase;
   color: #EFEFEF;
   margin-top: 3em;
@@ -394,12 +394,12 @@ header .navigation-row .menu-toggle .hamburger path {
   font-size: 12px;
 }
 
-.founder .container .display-mobile .name {
+.founder .container .words .right .name {
   font-size: 34px;
   margin-top: 5px;
 }
 
-.founder .container .display-mobile .information {
+.founder .container .words .right .information {
   color: #C3C3C3;
   line-height: 24px;
   margin-top: .8em;
@@ -460,30 +460,24 @@ header .navigation-row .menu-toggle .hamburger path {
   .hero-section .container .display-mobile .title {
     padding: 3em 2em;
   }
-  .showcase .container .wrapper, .showcase .container .wrapper-mobile {
-    width: 375px;
-  }
-  .showcase .container .wrapper-mobile .boxes-mobile {
-    left: 375px;
-  }
-  .wuu-ecosystem .container .display-mobile .project-1 .information {
+  .wuu-ecosystem .container .project-1 .left .information {
     padding: 0 2em;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
   }
-  .wuu-ecosystem .container .display-mobile .project-1 .project-information {
+  .wuu-ecosystem .container .project-1 .left .project-information {
     padding: .5em 2em;
   }
-  .wuu-ecosystem .container .display-mobile .project-1 .images {
+  .wuu-ecosystem .container .project-1 .images {
     -ms-grid-columns: 150px 150px;
         grid-template-columns: 150px 150px;
     margin-top: 1em;
   }
-  .wuu-ecosystem .container .display-mobile .project-1 .images img {
+  .wuu-ecosystem .container .project-1 .images img {
     width: 150px;
   }
-  .founder .container .display-mobile {
+  .founder .container .words {
     padding: 1em 2em;
   }
   .footer .container .copy-power {
@@ -492,11 +486,11 @@ header .navigation-row .menu-toggle .hamburger path {
 }
 
 @media only screen and (min-width: 425px) {
-  .wuu-ecosystem .container .display-mobile .project-1 .images {
+  .wuu-ecosystem .container .project-1 .images {
     -ms-grid-columns: (180px)[2];
         grid-template-columns: repeat(2, 180px);
   }
-  .wuu-ecosystem .container .display-mobile .project-1 .images img {
+  .wuu-ecosystem .container .project-1 .images img {
     width: 180px;
   }
 }
@@ -535,17 +529,11 @@ header .navigation-row .menu-toggle .hamburger path {
     line-height: 30px;
     font-size: 20px;
   }
-  .showcase .container .wrapper, .showcase .container .wrapper-mobile {
-    width: 428px;
-  }
-  .showcase .container .wrapper-mobile .boxes-mobile {
-    left: 428px;
-  }
-  .wuu-ecosystem .container .display-mobile .project-1 .images {
+  .wuu-ecosystem .container .project-1 .images {
     -ms-grid-columns: (180px)[2];
         grid-template-columns: repeat(2, 180px);
   }
-  .wuu-ecosystem .container .display-mobile .project-1 .images img {
+  .wuu-ecosystem .container .project-1 .images img {
     width: 180px;
   }
   .footer .container .copy-power {
@@ -554,25 +542,92 @@ header .navigation-row .menu-toggle .hamburger path {
 }
 
 @media only screen and (min-width: 500px) {
-  .fullpage-menu .header-nav-footer {
-    bottom: 0;
-  }
-  .showcase .container .wrapper, .showcase .container .wrapper-mobile {
-    width: 500px;
-    margin-top: 5px;
-  }
-  .showcase .container .wrapper .boxes, .showcase .container .wrapper-mobile .boxes {
-    left: -140px;
-  }
-  .showcase .container .wrapper .boxes-mobile, .showcase .container .wrapper-mobile .boxes-mobile {
-    left: 500px;
-  }
-  .wuu-ecosystem .container .display-mobile .project-1 .images {
+  .wuu-ecosystem .container .project-1 .images {
     -ms-grid-columns: (200px)[2];
         grid-template-columns: repeat(2, 200px);
   }
-  .wuu-ecosystem .container .display-mobile .project-1 .images img {
+  .wuu-ecosystem .container .project-1 .images img {
     width: 200px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header .navigation-row {
+    padding: 1.5em 1.6em 0;
+  }
+  .hero-section .display-mobile {
+    display: none;
+  }
+  .hero-section .container .display-desktop {
+    display: block;
+  }
+  .hero-section .container .display-desktop .title {
+    margin-top: 14em;
+    padding: 0 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-section .container .display-desktop .title .hero-title-desk {
+    font-size: 30px;
+    width: 800px;
+  }
+  .hero-section .container .display-desktop .title .hero-desc-desk {
+    color: #BDBDBD;
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 4em;
+  }
+  .hero-section .container .display-desktop .banner {
+    margin: 4em 2em;
+  }
+  .hero-section .container .display-desktop .banner img {
+    width: 100%;
+  }
+  .showcase {
+    margin-top: 10em;
+  }
+  .wuu-ecosystem .container .project-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wuu-ecosystem .container .project-1 .images {
+    margin-right: 2em;
+    -ms-grid-columns: (160px)[2];
+        grid-template-columns: repeat(2, 160px);
+  }
+  .wuu-ecosystem .container .project-1 .images img {
+    width: 160px;
+  }
+  .founder .container .words {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .founder .container .words img {
+    width: 300px;
+    height: 300px;
+  }
+  .founder .container .words .right {
+    margin-left: 2em;
+    height: 300px;
+    overflow: hidden;
+  }
+  .founder .container .words .right .role {
+    margin-top: 0;
+  }
+  .footer .container .copy-power {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=main.css.map */
