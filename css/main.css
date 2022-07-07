@@ -691,7 +691,7 @@ header .navigation-row .menu-toggle .hamburger path {
     display: unset;
   }
   .showcase .container .wrapper-larger .boxes-larger {
-    left: -100%;
+    left: -400px;
   }
   .showcase .container .wrapper-larger .box-larger {
     width: 400px;
