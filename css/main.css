@@ -63,6 +63,10 @@ header .navigation-row .logo-img img {
   height: 80px;
 }
 
+header .navigation-row .logo-img .display-desktop {
+  display: none;
+}
+
 header .navigation-row .menu-toggle {
   background: transparent;
   border: none;
@@ -437,6 +441,10 @@ header .navigation-row .menu-toggle .hamburger path {
   margin-top: 5em;
 }
 
+.footer .footer-desktop {
+  display: none;
+}
+
 .footer .container .logo-name {
   font-size: 50px;
   text-align: center;
@@ -734,7 +742,7 @@ header .navigation-row .menu-toggle .hamburger path {
   .wuu-ecosystem .container .project-1 .images img {
     width: 220px;
   }
-  .founder {
+  .founder .container {
     padding: 1em 2.5em;
   }
   .founder .container .title-header .title {
@@ -777,16 +785,137 @@ header .navigation-row .menu-toggle .hamburger path {
   .footer .container .footer-desktop .socials .links {
     display: none;
   }
+  .footer .container .footer-desktop .socials .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2em;
+  }
+  .footer .container .footer-desktop .socials .icons img {
+    width: 30px;
+  }
+  .footer .container .footer-desktop .socials .icons .change {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .footer .container .footer-desktop .copy, .footer .container .footer-desktop .power {
     font-size: 14px;
     color: #BDBDBD;
-    width: 300px;
   }
   .footer .container .footer-desktop .copy span, .footer .container .footer-desktop .power span {
     color: #FFFFFF;
   }
   .footer .container .footer-desktop .power {
     text-align: right;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .showcase .container .title-header .title, .wuu-ecosystem .container .title-header .title, .founder .container .title-header .title {
+    font-size: 100px;
+  }
+  .showcase .container .title-header .desc, .wuu-ecosystem .container .title-header .desc, .founder .container .title-header .desc {
+    font-size: 20px;
+    margin-bottom: 5em;
+  }
+  header .navigation-row .logo-img a {
+    text-decoration: none;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navigation-row .logo-img a .display-desktop {
+    display: block;
+    margin-left: .5em;
+    font-size: 35px;
+  }
+  .hero-section .container {
+    padding: 0 6em;
+  }
+  .hero-section .container .display-desktop .title {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 500px 500px;
+        grid-template-columns: 500px 500px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero-section .container .display-desktop .title .hero-title-desk {
+    width: 100%;
+    font-size: 50px;
+  }
+  .hero-section .container .display-desktop .title .hero-desc-desk {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .wuu-ecosystem .container {
+    padding: 0 6em;
+  }
+  .wuu-ecosystem .container .project-1 {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wuu-ecosystem .container .project-1 .left .project-information {
+    width: 500px;
+  }
+  .founder .container {
+    padding: 0 6em;
+  }
+  .founder .container .title-header .title {
+    width: 700px;
+  }
+  .founder .container .words img {
+    width: 600px;
+    height: 600px;
+  }
+  .founder .container .words .right {
+    margin-left: 4em;
+    overflow: unset;
+    height: 100%;
+  }
+  .founder .container .words .right .name {
+    font-size: 40px;
+  }
+  .founder .container .words .right .information {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .footer .container .footer-desktop .socials {
+    font-size: 16px;
+  }
+  .footer .container .footer-desktop .socials img {
+    display: none;
+  }
+  .footer .container .footer-desktop .socials .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .container .footer-desktop .socials .links li {
+    margin-right: 1em;
+  }
+  .footer .container .footer-desktop .socials .links li a {
+    text-decoration: none;
+    color: #AFAFAF;
+  }
+  .footer .container .footer-desktop .socials .icons img {
+    width: 25px;
   }
 }
 /*# sourceMappingURL=main.css.map */

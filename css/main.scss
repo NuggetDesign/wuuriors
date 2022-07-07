@@ -54,8 +54,14 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        .logo-img img{
-            height: 80px;
+        .logo-img {
+            img{
+                height: 80px;
+            }
+
+            .display-desktop {
+                display: none;
+            }
         }
 
         .menu-toggle{
@@ -423,6 +429,10 @@ header {
 
 .footer {
     margin-top: 5em;
+
+    .footer-desktop {
+        display: none;
+    }
 
     .container {
 
@@ -855,9 +865,9 @@ header {
     }
 
     .founder {
-        padding: 1em 2.5em;
-
         .container {
+            padding: 1em 2.5em;
+
             .title-header {
                 .title {
                     width: 400px;
@@ -902,13 +912,27 @@ header {
                     .links {
                         display: none;
                     }
+
+                    .icons {
+                        display: flex;
+                        align-items: center;
+                        gap: 2em;
+
+                        img {
+                            width: 30px;
+                        }
+
+                        .change {
+                            display: block;
+                            align-items: center;
+                        }
+                    }
                 }
 
                 .copy, .power {
                     font-size: 14px;
                     color: #BDBDBD;
-                    width: 300px;
-
+                
                         span {
                             color: #FFFFFF;
                         }
@@ -921,6 +945,152 @@ header {
             }
         }
     }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .showcase .container .title-header, .wuu-ecosystem .container .title-header, .founder .container .title-header {
+        .title {
+            font-size: 100px;
+        }
+
+        .desc {
+            font-size: 20px;
+            margin-bottom: 5em;
+        }
+    }
+
+    header {
+        .navigation-row {
+            .logo-img {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+
+                    .display-desktop {
+                        display: block;
+                        margin-left: .5em;
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-section {
+        .container {
+            padding: 0 6em;
+
+            .display-desktop {
+                .title {
+                    display: grid;
+                    grid-template-columns: 500px 500px;
+                    justify-content: space-between;
+
+                    .hero-title-desk {
+                        width: 100%;
+                        font-size: 50px;
+                    }
+
+                    .hero-desc-desk {
+                        width: 100%;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .wuu-ecosystem {
+        .container {
+            padding: 0 6em;
+
+            .project-1 {
+                justify-content: space-between;
+
+                .left {
+                    .project-information {
+                        width: 500px;
+                    }
+                }
+            }
+        }
+    }
+
+    .founder {
+        .container {
+            padding: 0 6em;
+            
+            .title-header {
+                .title {
+                    width: 700px;
+                }
+            }
+
+            .words {
+                img {
+                    width: 600px;
+                    height: 600px;
+                }
+
+                .right {
+                    margin-left: 4em;
+                    overflow: unset;
+                    height: 100%;
+
+                    .name {
+                        font-size: 40px;
+                    }
+
+                    .information {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .container {
+            .footer-desktop {
+                .socials {
+                    font-size: 16px;
+
+                    img {
+                        display: none;
+                    }
+                    
+                    .links {
+                        display: flex;
+                        list-style-type: none;
+                        align-items: center;
+                        
+
+                        li {
+                            margin-right: 1em;
+
+                            a {
+                                text-decoration: none;
+                                color: #AFAFAF;
+                            }
+                        }
+                    }
+
+                    .icons {
+                        img {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 
 
 }
