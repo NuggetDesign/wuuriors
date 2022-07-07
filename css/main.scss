@@ -781,11 +781,12 @@ header {
 
         .container {
             .wrapper-larger {
+                -webkit-overflow-scrolling: auto;
                 height: 400px;
                 display: unset;
 
                 .boxes-larger {
-                    left: -400px;
+                    left: -100%;
                 }
 
                 .box-larger {

@@ -687,11 +687,12 @@ header .navigation-row .menu-toggle .hamburger path {
     display: none;
   }
   .showcase .container .wrapper-larger {
+    -webkit-overflow-scrolling: auto;
     height: 400px;
     display: unset;
   }
   .showcase .container .wrapper-larger .boxes-larger {
-    left: -400px;
+    left: -100%;
   }
   .showcase .container .wrapper-larger .box-larger {
     width: 400px;
