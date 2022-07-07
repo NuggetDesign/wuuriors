@@ -674,7 +674,7 @@ header .navigation-row .menu-toggle .hamburger path {
   }
   .hero-section .container {
     padding: 0 2.5em;
-    margin-top: 15em;
+    margin-top: 10em;
   }
   .hero-section .container .display-desktop .title .hero-title-desk {
     font-size: 40px;
@@ -682,6 +682,9 @@ header .navigation-row .menu-toggle .hamburger path {
   }
   .hero-section .container .display-desktop .title .hero-desc-desk {
     width: 400px;
+  }
+  .showcase {
+    margin-top: 20em;
   }
   .showcase .wrapper-mobile, .showcase .wrapper {
     display: none;
@@ -722,7 +725,6 @@ header .navigation-row .menu-toggle .hamburger path {
     width: 220px;
   }
   .founder {
-    margin-top: 15em;
     padding: 1em 2.5em;
   }
   .founder .container .title-header .title {
