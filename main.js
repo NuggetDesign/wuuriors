@@ -7,11 +7,21 @@ var ani = gsap.timeline({
 
 ani.from(".building", { y: 150, opacity: 0, duration: 1 })
   .from(".hero-title", { y: 50, duration: .7 }, "-=.64")
-  .from(".hero-desc", { y: 50, duration: .7 }, "-=.54")
+  .from(".hero-desc", { y: 500, duration: .7 }, "-=.54")
 
 var menuToggle = document.getElementById("menuToggle")
 var menuBar = gsap.timeline();
 
+var aniDesktop = gsap.timeline ({
+	scrollTrigger: {
+		trigger: ".hero-section",
+	}
+});
+
+aniDesktop.from(".hero-title-desk", { y: 100, opacity: 0, duration: 1})
+          .from(".hero-desc-desk", { x: 100, duration: .4 }, "-=.6")
+		  .from(".banner", { y: -50, opacity: 0, duration: .7}, "-=.5")
+		  
 menuBar.to('.bar-1', 0.5,{
 	attr:{d: "M8,2 L2,8"},
 	x:1,
@@ -25,7 +35,6 @@ menuBar.to('.bar-3', 0.5,{
 }, 'start')
 
 menuBar.reverse();
-
 
 
 var tl = gsap.timeline({ paused: true});
@@ -119,6 +128,26 @@ gsap.to(".box", {
   x: "+=6235", //move each box 500px to right
   modifiers: {
     x: gsap.utils.unitize(x => parseFloat(x) % 6235) //force x value to be between 0 and 500 using modulus
+  },
+  repeat: -1
+});
+
+
+var colors = ["black"];
+
+//initially colorize each box and position in a row
+gsap.set(".box-larger", {
+  backgroundColor: (i) => colors[i % colors.length],
+  x: (i) => i * 410
+});
+
+
+gsap.to(".box-larger", {
+  duration: 120,
+  ease: "none",
+  x: "+=17630", //move each box 500px to right
+  modifiers: {
+    x: gsap.utils.unitize(x => parseFloat(x) % 17630) //force x value to be between 0 and 500 using modulus
   },
   repeat: -1
 });

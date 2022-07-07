@@ -271,6 +271,28 @@ header {
                 display: flex;
             }
         }
+
+        .wrapper-larger{
+            width: 100%;
+            height:140px;
+            position:relative;
+            margin:auto;
+            overflow:hidden;
+            display: none;
+
+            .boxes-larger {
+                position:relative;
+                left:-140px;
+            }
+
+            .box-larger{
+                width:140px;
+                height:140px;
+                position:absolute;
+                background:red;
+                display: flex;
+            }
+        }
     }
 }
 
@@ -326,7 +348,7 @@ header {
 
                 .project-information {
                     padding: .5em 1em;
-                    color: #C3C3C3;
+                    color: #b3b3b3;
                     line-height: 27px;
                 }
             }
@@ -347,6 +369,10 @@ header {
 
 .founder {
     margin-top: 10em;
+
+    .footer-desktop {
+        display: none;
+    }
 
     .container {
         .title-header {
@@ -610,6 +636,16 @@ header {
         }
     }
 
+    .fullpage-menu {
+        .header-nav-footer {
+            bottom: 0;
+        }
+
+        nav ul li a {
+            font-size: 60px;
+        }
+    }
+
     .hero-section {
         .display-mobile {
             display: none;
@@ -702,10 +738,174 @@ header {
             }
         }
     }
+}
 
+@media only screen and (min-width: 1024px) {
 
+    .showcase .container .title-header, .wuu-ecosystem .container .title-header, .founder .container .title-header {
+        .title {
+            font-size: 60px;
+        }
+    }
 
+    header {
+        .navigation-row {
+            padding: 2em 2.5em 0;
+        }
+    }
 
+    .hero-section {
+        .container {
+            padding: 0 2.5em;
+            margin-top: 15em;
+
+            .display-desktop {
+                .title {
+                    .hero-title-desk {
+                        font-size: 40px;
+                        width: 600px;
+                    }
+
+                    .hero-desc-desk {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    .showcase {
+        .wrapper-mobile, .wrapper {
+            display: none;
+        }
+
+        .container {
+            .wrapper-larger {
+                height: 400px;
+                display: unset;
+
+                .boxes-larger {
+                    left: -100%;
+                }
+
+                .box-larger {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    .wuu-ecosystem{
+        margin-top: 40em;
+
+        .container {
+            padding: 0 2.5em;
+
+            .project-1 {
+                .left {
+                    .information {
+                        .information-number {
+                            font-size: 100px;
+                        }
+
+                        .project-date {
+                            .date {
+                                font-size: 18px;
+                            }
+
+                            .project-title {
+                                font-size: 40px;
+                                margin-bottom: 14px;
+                            }
+                        }
+                    }
+
+                    .project-information {
+                        line-height: 30px;
+                        font-size: 18px;
+                    }
+                }
+
+                .images {
+                    grid-template-columns: repeat(2, 220px);
+
+                    img {
+                        width: 220px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .founder {
+        margin-top: 15em;
+        padding: 1em 2.5em;
+
+        .container {
+            .title-header {
+                .title {
+                    width: 400px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            .words {
+                img {
+                    width: 500px;
+                    height: 500px;
+                }
+
+                .right {
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 10em;
+
+        .footer-mobile {
+            display: none;
+        }
+        .footer-desktop {
+            display: unset;
+        }
+
+        .container {
+            padding: 0 2.5em;
+            .footer-desktop {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-content: space-between;
+                align-items: center;
+
+                .socials {
+                    .links {
+                        display: none;
+                    }
+                }
+
+                .copy, .power {
+                    font-size: 14px;
+                    color: #BDBDBD;
+                    width: 300px;
+
+                        span {
+                            color: #FFFFFF;
+                        }
+                }
+
+                .power {
+                    text-align: right;
+                }
+                
+            }
+        }
+    }
 
 
 }
