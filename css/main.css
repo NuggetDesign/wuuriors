@@ -917,6 +917,9 @@ header .navigation-row .menu-toggle .hamburger path {
     text-decoration: none;
     color: #AFAFAF;
   }
+  .footer .container .footer-desktop .socials .icons {
+    gap: 1.5em;
+  }
   .footer .container .footer-desktop .socials .icons img {
     width: 25px;
   }

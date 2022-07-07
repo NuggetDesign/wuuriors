@@ -1057,7 +1057,7 @@ header {
     .footer {
         .container {
             padding: 0 6em;
-            
+
             .footer-desktop {
                 .socials {
                     font-size: 16px;
@@ -1083,6 +1083,8 @@ header {
                     }
 
                     .icons {
+                        gap: 1.5em;
+
                         img {
                             width: 25px;
                         }
