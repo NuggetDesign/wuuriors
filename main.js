@@ -90,16 +90,16 @@ var colors = ["black"];
 //initially colorize each box and position in a row
 gsap.set(".box-mobile", {
   backgroundColor: (i) => colors[i % colors.length],
-  x: (i) => i * -150
+  x: (i) => i * -145
 });
 
 
 gsap.to(".box-mobile", {
-  duration: 7,
+  duration: 70,
   ease: "none",
-  x: "-=600", //move each box 500px to right
+  x: "-=6235", //move each box 500px to right
   modifiers: {
-    x: gsap.utils.unitize(x => parseFloat(x) % 600) //force x value to be between 0 and 500 using modulus
+    x: gsap.utils.unitize(x => parseFloat(x) % 6235) //force x value to be between 0 and 500 using modulus
   },
   repeat: -1
 });
@@ -109,16 +109,16 @@ var colors = ["black"];
 //initially colorize each box and position in a row
 gsap.set(".box", {
   backgroundColor: (i) => colors[i % colors.length],
-  x: (i) => i * 150
+  x: (i) => i * 145
 });
 
 
 gsap.to(".box", {
-  duration: 7,
+  duration: 70,
   ease: "none",
-  x: "+=600", //move each box 500px to right
+  x: "+=6235", //move each box 500px to right
   modifiers: {
-    x: gsap.utils.unitize(x => parseFloat(x) % 600) //force x value to be between 0 and 500 using modulus
+    x: gsap.utils.unitize(x => parseFloat(x) % 6235) //force x value to be between 0 and 500 using modulus
   },
   repeat: -1
 });

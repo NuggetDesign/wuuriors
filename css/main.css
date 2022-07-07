@@ -552,4 +552,27 @@ header .navigation-row .menu-toggle .hamburger path {
     font-size: 11px;
   }
 }
+
+@media only screen and (min-width: 500px) {
+  .fullpage-menu .header-nav-footer {
+    bottom: 0;
+  }
+  .showcase .container .wrapper, .showcase .container .wrapper-mobile {
+    width: 500px;
+    margin-top: 5px;
+  }
+  .showcase .container .wrapper .boxes, .showcase .container .wrapper-mobile .boxes {
+    left: -140px;
+  }
+  .showcase .container .wrapper .boxes-mobile, .showcase .container .wrapper-mobile .boxes-mobile {
+    left: 500px;
+  }
+  .wuu-ecosystem .container .display-mobile .project-1 .images {
+    -ms-grid-columns: (200px)[2];
+        grid-template-columns: repeat(2, 200px);
+  }
+  .wuu-ecosystem .container .display-mobile .project-1 .images img {
+    width: 200px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -610,14 +610,42 @@ header {
             font-size: 11px;
         }
     }
+}
 
+@media only screen and (min-width: 500px) {
 
+    .fullpage-menu {
+        .header-nav-footer {
+            bottom: 0;
+        }
+    }
 
+    .showcase {
+        .container {
+            .wrapper, .wrapper-mobile {
+                width: 500px;
+                margin-top: 5px;
 
+                .boxes {
+                    left: -140px;
+                }
 
+                .boxes-mobile {
+                    left: 500px;
+                }
+            }
+        }
+    }
 
+    .wuu-ecosystem .container .display-mobile .project-1 {
+        .images {
+            grid-template-columns: repeat(2, 200px);
 
-
+            img {
+                width: 200px;
+            }
+        }
+    }
 
 
 
