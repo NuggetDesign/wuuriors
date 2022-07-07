@@ -892,6 +892,9 @@ header .navigation-row .menu-toggle .hamburger path {
     font-size: 20px;
     line-height: 28px;
   }
+  .footer .container {
+    padding: 0 6em;
+  }
   .footer .container .footer-desktop .socials {
     font-size: 16px;
   }
