@@ -845,8 +845,8 @@ header .navigation-row .menu-toggle .hamburger path {
     margin-top: 10em;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 500px 500px;
-        grid-template-columns: 500px 500px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
