@@ -931,6 +931,10 @@ header .navigation-row .menu-toggle .hamburger path {
     width: 1640px;
     margin: 0 auto;
   }
+  .wuu-ecosystem .container {
+    width: 1300px;
+    margin: 0 auto;
+  }
   header .navigation-row {
     width: 1870px;
     margin: 0 auto;
