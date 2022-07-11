@@ -925,4 +925,29 @@ header .navigation-row .menu-toggle .hamburger path {
     width: 25px;
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .container {
+    width: 1640px;
+    margin: 0 auto;
+  }
+  header .navigation-row {
+    width: 1870px;
+    margin: 0 auto;
+  }
+  .fullpage-menu .fullpage-menu-inner {
+    width: 1670px;
+    margin: 0 auto;
+  }
+  .fullpage-menu .header-nav-footer .social-links {
+    width: 1600px;
+    margin: 0 auto;
+  }
+  .hero-section .container .display-desktop .title {
+    margin-top: 12em;
+  }
+  .showcase .container {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
