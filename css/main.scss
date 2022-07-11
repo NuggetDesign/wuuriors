@@ -1129,6 +1129,12 @@ header {
             .display-desktop {
                 .title {
                     margin-top: 12em;
+                    grid-template-columns: 40% 500px;
+                    justify-content: space-between;
+
+                    .hero-desc-desk {
+                        margin-left: 0em;
+                    }
                 }
             }
         }

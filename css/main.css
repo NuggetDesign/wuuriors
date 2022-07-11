@@ -945,6 +945,14 @@ header .navigation-row .menu-toggle .hamburger path {
   }
   .hero-section .container .display-desktop .title {
     margin-top: 12em;
+    -ms-grid-columns: 40% 500px;
+        grid-template-columns: 40% 500px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero-section .container .display-desktop .title .hero-desc-desk {
+    margin-left: 0em;
   }
   .showcase .container {
     width: 100%;
