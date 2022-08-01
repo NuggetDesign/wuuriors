@@ -384,6 +384,10 @@ header {
         .project-2 {
             margin-top: 3em;
         }
+
+        .project-2-desktop {
+            display: none;
+        }
     }
 }
 
@@ -749,13 +753,59 @@ header {
                 align-items: center;
             }
 
-            .project-2 {
+            .project-2-mobile {
+                display: none;
+            }
+
+            .project-2-desktop {
                 display: flex;
                 align-items: center;
+                padding: 0 2em;
 
+                .right {
+                    .information {
+                        display: flex;
+                        justify-content: center;
+                        padding: 0 1em;
+        
+                        .information-number {
+                            text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+                            color: rgb(0, 0, 0);
+                            font-size: 80px;
+                        }
+        
+                        .project-date {
+                            align-self: flex-end;
+                            margin-left: 1em;
+        
+                            .date {
+                                font-size: 14px;
+                                
+                                span {
+                                    color: #BDBDBD;
+                                }
+                            }
+        
+                            .project-title {
+                                font-size: 30px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+    
+                    .project-information {
+                        padding: .5em 1em;
+                        color: #b3b3b3;
+                        line-height: 27px;
+                    }
+                }
+    
                 .images {
+                    display: grid;
                     margin-right: 2em;
                     grid-template-columns: repeat(2, 160px);
+                    justify-content: center;
+                    grid-gap: 10px;
     
                     img {
                         width: 160px;
@@ -871,7 +921,7 @@ header {
                 }
             }
 
-            .project-2 {
+            .project-2-desktop {
                 .images {
                     grid-template-columns: repeat(2, 220px);
 
@@ -881,8 +931,34 @@ header {
                 }
             }
 
-            .project-1, .project-2 {
+            .project-1 {
                 .left {
+                    .information {
+                        .information-number {
+                            font-size: 100px;
+                        }
+
+                        .project-date {
+                            .date {
+                                font-size: 18px;
+                            }
+
+                            .project-title {
+                                font-size: 35px;
+                                margin-bottom: 14px;
+                            }
+                        }
+                    }
+
+                    .project-information {
+                        line-height: 30px;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .project-2-desktop {
+                .right {
                     .information {
                         .information-number {
                             font-size: 100px;
@@ -1061,10 +1137,24 @@ header {
         .container {
             padding: 0 6em;
 
-            .project-1, .project-2 {
+            .project-1 {
                 justify-content: space-between;
 
                 .left {
+                    .project-information {
+                        width: 500px;
+                    }
+                }
+            }
+
+            .project-2-desktop {
+                justify-content: space-between;
+
+                .right {
+                    .information {
+                        justify-content: left;
+                    }
+                    
                     .project-information {
                         width: 500px;
                     }

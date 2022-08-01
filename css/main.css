@@ -401,6 +401,10 @@ header .navigation-row .menu-toggle .hamburger path {
   margin-top: 3em;
 }
 
+.wuu-ecosystem .container .project-2-desktop {
+  display: none;
+}
+
 .founder {
   margin-top: 10em;
 }
@@ -679,20 +683,64 @@ header .navigation-row .menu-toggle .hamburger path {
         -ms-flex-align: center;
             align-items: center;
   }
-  .wuu-ecosystem .container .project-2 {
+  .wuu-ecosystem .container .project-2-mobile {
+    display: none;
+  }
+  .wuu-ecosystem .container .project-2-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0 2em;
   }
-  .wuu-ecosystem .container .project-2 .images {
+  .wuu-ecosystem .container .project-2-desktop .right .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 1em;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .information .information-number {
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    color: black;
+    font-size: 80px;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .information .project-date {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-left: 1em;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .information .project-date .date {
+    font-size: 14px;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .information .project-date .date span {
+    color: #BDBDBD;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .information .project-date .project-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .project-information {
+    padding: .5em 1em;
+    color: #b3b3b3;
+    line-height: 27px;
+  }
+  .wuu-ecosystem .container .project-2-desktop .images {
+    display: -ms-grid;
+    display: grid;
     margin-right: 2em;
     -ms-grid-columns: (160px)[2];
         grid-template-columns: repeat(2, 160px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 10px;
   }
-  .wuu-ecosystem .container .project-2 .images img {
+  .wuu-ecosystem .container .project-2-desktop .images img {
     width: 160px;
   }
   .founder .container .words img {
@@ -757,24 +805,38 @@ header .navigation-row .menu-toggle .hamburger path {
   .wuu-ecosystem .container .project-1 .images img {
     width: 300px;
   }
-  .wuu-ecosystem .container .project-2 .images {
+  .wuu-ecosystem .container .project-2-desktop .images {
     -ms-grid-columns: (220px)[2];
         grid-template-columns: repeat(2, 220px);
   }
-  .wuu-ecosystem .container .project-2 .images img {
+  .wuu-ecosystem .container .project-2-desktop .images img {
     width: 220px;
   }
-  .wuu-ecosystem .container .project-1 .left .information .information-number, .wuu-ecosystem .container .project-2 .left .information .information-number {
+  .wuu-ecosystem .container .project-1 .left .information .information-number {
     font-size: 100px;
   }
-  .wuu-ecosystem .container .project-1 .left .information .project-date .date, .wuu-ecosystem .container .project-2 .left .information .project-date .date {
+  .wuu-ecosystem .container .project-1 .left .information .project-date .date {
     font-size: 18px;
   }
-  .wuu-ecosystem .container .project-1 .left .information .project-date .project-title, .wuu-ecosystem .container .project-2 .left .information .project-date .project-title {
+  .wuu-ecosystem .container .project-1 .left .information .project-date .project-title {
     font-size: 35px;
     margin-bottom: 14px;
   }
-  .wuu-ecosystem .container .project-1 .left .project-information, .wuu-ecosystem .container .project-2 .left .project-information {
+  .wuu-ecosystem .container .project-1 .left .project-information {
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .information .information-number {
+    font-size: 100px;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .information .project-date .date {
+    font-size: 18px;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .information .project-date .project-title {
+    font-size: 35px;
+    margin-bottom: 14px;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .project-information {
     line-height: 30px;
     font-size: 18px;
   }
@@ -910,12 +972,25 @@ header .navigation-row .menu-toggle .hamburger path {
   .wuu-ecosystem .container {
     padding: 0 6em;
   }
-  .wuu-ecosystem .container .project-1, .wuu-ecosystem .container .project-2 {
+  .wuu-ecosystem .container .project-1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .wuu-ecosystem .container .project-1 .left .project-information, .wuu-ecosystem .container .project-2 .left .project-information {
+  .wuu-ecosystem .container .project-1 .left .project-information {
+    width: 500px;
+  }
+  .wuu-ecosystem .container .project-2-desktop {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .information {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .wuu-ecosystem .container .project-2-desktop .right .project-information {
     width: 500px;
   }
   .wuu-ecosystem .container .project-1 .images {
