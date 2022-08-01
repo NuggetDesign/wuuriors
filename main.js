@@ -143,11 +143,11 @@ gsap.set(".box-larger", {
 
 
 gsap.to(".box-larger", {
-  duration: 120,
+  duration: 180,
   ease: "none",
-  x: "+=17630", //move each box 500px to right
+  x: "+=35260", //move each box 500px to right
   modifiers: {
-    x: gsap.utils.unitize(x => parseFloat(x) % 17630) //force x value to be between 0 and 500 using modulus
+    x: gsap.utils.unitize(x => parseFloat(x) % 35260) //force x value to be between 0 and 500 using modulus
   },
   repeat: -1
 });
