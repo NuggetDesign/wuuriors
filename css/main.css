@@ -233,12 +233,7 @@ header .navigation-row .menu-toggle .hamburger path {
 
 .showcase .container .title-header .title {
   font-size: 36px;
-}
-
-.showcase .container .title-header .desc {
   margin-top: .8em;
-  font-size: 16px;
-  color: #BDBDBD;
 }
 
 .showcase .container .wrapper {
@@ -324,12 +319,7 @@ header .navigation-row .menu-toggle .hamburger path {
 
 .wuu-ecosystem .container .title-header .title {
   font-size: 36px;
-}
-
-.wuu-ecosystem .container .title-header .desc {
   margin-top: .8em;
-  font-size: 16px;
-  color: #BDBDBD;
 }
 
 .wuu-ecosystem .container .project-1 .left .information, .wuu-ecosystem .container .project-2 .left .information {
@@ -420,12 +410,7 @@ header .navigation-row .menu-toggle .hamburger path {
 
 .founder .container .title-header .title {
   font-size: 36px;
-}
-
-.founder .container .title-header .desc {
   margin-top: .8em;
-  font-size: 16px;
-  color: #BDBDBD;
 }
 
 .founder .container .words {
@@ -927,9 +912,6 @@ header .navigation-row .menu-toggle .hamburger path {
 @media only screen and (min-width: 1440px) {
   .showcase .container .title-header .title, .wuu-ecosystem .container .title-header .title, .founder .container .title-header .title {
     font-size: 100px;
-  }
-  .showcase .container .title-header .desc, .wuu-ecosystem .container .title-header .desc, .founder .container .title-header .desc {
-    font-size: 20px;
     margin-bottom: 5em;
   }
   header .navigation-row .logo-img a {
