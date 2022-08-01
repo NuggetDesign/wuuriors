@@ -78,18 +78,32 @@ var navOne = document.querySelector('.link1')
 navOne.addEventListener('click', function(){
 	menuBar.reversed(!menuBar.reversed());
 	tl.reversed(!tl.reversed());
-})
+});
 
 var navTwo = document.querySelector('.link2')
 
 navTwo.addEventListener('click', function(){
 	menuBar.reversed(!menuBar.reversed());
 	tl.reversed(!tl.reversed());
-})
+});
 
 var navThree = document.querySelector('.link3')
 
 navThree.addEventListener('click', function(){
+	menuBar.reversed(!menuBar.reversed());
+	tl.reversed(!tl.reversed());
+});
+
+var navFourth = document.querySelector('.link4')
+
+navFourth.addEventListener('click', function(){
+	menuBar.reversed(!menuBar.reversed());
+	tl.reversed(!tl.reversed());
+})
+
+var navFifth = document.querySelector('.link5')
+
+navFifth.addEventListener('click', function(){
 	menuBar.reversed(!menuBar.reversed());
 	tl.reversed(!tl.reversed());
 })
