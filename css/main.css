@@ -429,20 +429,38 @@ header .navigation-row .menu-toggle .hamburger path {
   font-size: 12px;
 }
 
-.founder .container .words .right .name {
+.founder .container .words .right .twitter-founder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.founder .container .words .right .twitter-founder .name {
   font-size: 34px;
   margin-top: 5px;
 }
 
-.founder .container .words .right .name a {
+.founder .container .words .right .twitter-founder .name a {
   text-decoration: none;
   color: white;
 }
 
-.founder .container .words .right .name a:hover {
+.founder .container .words .right .twitter-founder .name a:hover {
   color: #A50000;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.founder .container .words .right .twitter-founder .twitter-link {
+  margin-left: 1em;
+  margin-top: .4em;
+}
+
+.founder .container .words .right .twitter-founder .twitter-link img {
+  width: 30px;
 }
 
 .founder .container .words .right .information {
@@ -850,6 +868,10 @@ header .navigation-row .menu-toggle .hamburger path {
   }
   .founder .container .words .right .role {
     margin-top: 0;
+  }
+  .founder .container .words .right .twitter-link img {
+    width: 30px;
+    height: 30px;
   }
   .footer {
     margin-top: 10em;

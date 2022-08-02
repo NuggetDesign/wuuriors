@@ -415,18 +415,33 @@ header {
                     font-size: 12px;
                 }
     
-                .name {
-                    font-size: 34px;
-                    margin-top: 5px;
-                    
-                    a {
-                        text-decoration: none;
-                        color: white;
+                
+                .twitter-founder {
+                    display: flex;
+                    align-items: center;
+
+                    .name {
+                        font-size: 34px;
+                        margin-top: 5px;
+                        
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+    
+                        a:hover {
+                            color: #A50000;
+                            transition: 0.2s;
+                        }
                     }
 
-                    a:hover {
-                        color: #A50000;
-                        transition: 0.2s;
+                    .twitter-link {
+                        margin-left: 1em;
+                        margin-top: .4em;
+
+                        img {
+                            width: 30px;
+                        }
                     }
                 }
     
@@ -993,12 +1008,19 @@ header {
 
                 .right {
                     margin-left: 2em;
-
+                    
                     .role {
                         margin-top: 0;
                     }
+                    
+                    .twitter-link img {
+                        width: 30px;
+                        height: 30px;
+                    }
                 }
             }
+
+            
         }
     }
 
