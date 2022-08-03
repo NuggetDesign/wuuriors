@@ -118,11 +118,11 @@ gsap.set(".box-mobile", {
 
 
 gsap.to(".box-mobile", {
-  duration: 70,
+  duration: 13,
   ease: "none",
-  x: "-=6235", //move each box 500px to right
+  x: "-=1305", //move each box 500px to right
   modifiers: {
-    x: gsap.utils.unitize(x => parseFloat(x) % 6235) //force x value to be between 0 and 500 using modulus
+    x: gsap.utils.unitize(x => parseFloat(x) % 1305) //force x value to be between 0 and 500 using modulus
   },
   repeat: -1
 });
@@ -137,11 +137,11 @@ gsap.set(".box", {
 
 
 gsap.to(".box", {
-  duration: 70,
+  duration: 13,
   ease: "none",
-  x: "+=6235", //move each box 500px to right
+  x: "+=1305", //move each box 500px to right
   modifiers: {
-    x: gsap.utils.unitize(x => parseFloat(x) % 6235) //force x value to be between 0 and 500 using modulus
+    x: gsap.utils.unitize(x => parseFloat(x) % 1305) //force x value to be between 0 and 500 using modulus
   },
   repeat: -1
 });
@@ -157,22 +157,11 @@ gsap.set(".box-larger", {
 
 
 gsap.to(".box-larger", {
-  duration: 180,
+  duration: 85,
   ease: "none",
-  x: "+=35260", //move each box 500px to right
+  x: "+=15580", //move each box 500px to right
   modifiers: {
-    x: gsap.utils.unitize(x => parseFloat(x) % 35260) //force x value to be between 0 and 500 using modulus
+    x: gsap.utils.unitize(x => parseFloat(x) % 15580) //force x value to be between 0 and 500 using modulus
   },
   repeat: -1
 });
-
-
-
-
-
-
-
-  
-
-
-
